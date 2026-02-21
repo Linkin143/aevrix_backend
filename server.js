@@ -9,7 +9,10 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ["https://aevrix.netlify.app/", "http://localhost:8080"],
+  methods: ["GET", "POST"]
+}));
 app.use(express.json());
 
 // Routes

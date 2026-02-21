@@ -3,13 +3,13 @@ import nodemailer from "nodemailer";
 export const sendEmail = async (options) => {
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 465,
-    secure: true, // true for 465
+    port: 587,
+    secure: false, // TLS
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      pass: process.env.EMAIL_PASS, // Gmail App Password
     },
-    family: 4, // 👈 FORCE IPv4
+    family: 4, // 🚨 REQUIRED on Render
   });
 
   const mailOptions = {

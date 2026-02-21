@@ -1,4 +1,4 @@
-import Contact from '../models/Contact.js';
+import Contact from '../models/contact.js';
 import { userThanksTemplate } from '../utils/emailTemplates.js';
 import { sendEmail } from '../utils/sendEmail.js';
 

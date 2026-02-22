@@ -16,8 +16,8 @@ export const getApprovedTestimonials = async (req, res) => {
 export const submitTestimonial = async (req, res) => {
   try {
     const testimonial = await Testimonial.create(req.body);
-    
-    const approveUrl = `${process.env.BASE_URL}/api/testimonials/approve/${testimonial._id}`;
+    const URL = process.env.BASE_URL || "http://localhost:5000";
+    const approveUrl = `${URL}/api/testimonials/approve/${testimonial._id}`;
 
     await sendEmail({
       email: process.env.FOUNDER_EMAIL,

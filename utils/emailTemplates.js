@@ -34,7 +34,7 @@ export const userThanksTemplate = (name) => `
       <h2>Hello ${name},</h2>
       <p>Thanks for contacting us. We've received your message and will get back to you soon.</p>
       <div style="margin-top: 30px; border-top: 1px solid #39FF14; padding-top: 20px; font-size: 12px; color: #888;">
-        Sent by AEVRIX AI Systems
+        Sent by AEVRIX. © 2025 AEVRIX. All rights reserved.
       </div>
     </div>
   </div>

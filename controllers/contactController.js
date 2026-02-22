@@ -35,9 +35,9 @@ export const submitContactForm = async (req, res) => {
       subject: 'Thanks for reaching out to AEVRIX',
       // html: userThanksTemplate(name),
       html: `<p>Hi ${name},</p>
-    <p>Thanks for reaching out to AEVRIX AI.</p>
-    <p>Our team has received your message and will get back to you shortly.</p>
-    <p>— AEVRIX AI Team</p>`,
+           <p>Thanks for reaching out to AEVRIX AI.</p>
+           <p>Our team has received your message and will get back to you shortly.</p>
+           <p>— AEVRIX AI Team</p>`,
     });
 
     res.status(201).json({ success: true, message: "Message sent successfully" });

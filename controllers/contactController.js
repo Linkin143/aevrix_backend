@@ -15,7 +15,7 @@ export const submitContactForm = async (req, res) => {
     });
 
     // 2. Email to Founder (3D Glass UI)
-    await sendEmail({
+    /*await sendEmail({
       email: process.env.FOUNDER_EMAIL,
       subject: `New Inquiry: ${subject}`,
       html: `
@@ -28,11 +28,11 @@ export const submitContactForm = async (req, res) => {
           </div>
         </div>
       `,
-    });
+    });*/
 
     // 3. Email to User (Auto-response)
     await sendEmail({
-      email: process.env.FOUNDER_EMAIL,
+      email: email,
       subject: 'Thanks for reaching out to AEVRIX',
       html: userThanksTemplate(name),
     });

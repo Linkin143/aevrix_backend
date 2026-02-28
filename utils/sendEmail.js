@@ -28,7 +28,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const sendEmail = async ({ email, subject, html }) => {
   await resend.emails.send({
-    from: "AEVRIX AI <onboarding@resend.dev>",
+    from: "AEVRIX <contact@aevrix.in>",
     to: email,
     subject,
     html,

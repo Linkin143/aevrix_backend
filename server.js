@@ -10,7 +10,7 @@ connectDB();
 
 const app = express();
 app.use(cors({
-  origin: ["https://aevrix.netlify.app", "http://localhost:8080"],
+  origin: ["https://aevrix.netlify.app", "http://localhost:8080","https://aevrix.in"],
   methods: ["GET", "POST"]
 }));
 app.use(express.json());

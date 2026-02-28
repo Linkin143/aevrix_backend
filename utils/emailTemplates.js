@@ -28,7 +28,7 @@ export const founderTestimonialTemplate = (data, approveUrl) => `
 
       <!-- Brand -->
       <h1 style="text-align: center; font-size: 32px; margin: 0;">
-        <span style="color: #000;">AEVRI</span><span style="color: #39FF14; text-shadow: 0 0 10px #39FF14;">X</span>
+        <span style="color: #FFFFFF;">AEVRI</span><span style="color: #39FF14; text-shadow: 0 0 10px #39FF14;">X</span>
       </h1>
 
       <p>New Testimonial Received from <strong>${data.name}</strong></p>
@@ -64,7 +64,7 @@ export const userThanksTemplate = (name) => `
 
       <!-- Brand Name -->
       <h1 style="margin: 0; font-size: 32px; text-align: center;">
-        <span style="color: #000;">AEVRI</span><span style="color: #39FF14;">X</span>
+        <span style="color: #FFFFFF;">AEVRI</span><span style="color: #39FF14;">X</span>
       </h1>
 
       <h2 style="margin-top: 25px;">Hello ${name},</h2>

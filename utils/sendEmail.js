@@ -26,12 +26,12 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const sendEmail = async ({ email, subject, html }) => {
+export const sendEmail = async ({ email, subject, html,reply_to }) => {
   await resend.emails.send({
     from: "AEVRIX <contact@aevrix.in>",
     to: email,
     subject,
     html,
-    reply_to: process.env.FOUNDER_EMAIL,
+    reply_to,
   });
 };

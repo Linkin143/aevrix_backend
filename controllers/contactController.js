@@ -35,6 +35,7 @@ export const submitContactForm = async (req, res) => {
       email: email,
       subject: 'Thanks for reaching out to AEVRIX',
       html: userThanksTemplate(name),
+      reply_to: process.env.FOUNDER_EMAIL,
     });
 
     res.status(201).json({ success: true, message: "Message sent successfully" });
